@@ -1,0 +1,80 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Core.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/CheckBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="Lapd.Toggle" TargetType="CheckBox">
+        <Setter Property="FontFamily" Value="{StaticResource Lapd.FontMono}" />
+        <Setter Property="FontSize" Value="10" />
+        <Setter Property="Foreground" Value="{StaticResource Lapd.TealDim}" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="ContentTemplate" Value="{StaticResource Lapd.OptionLabelTemplate}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <StackPanel Orientation="Horizontal" Background="Transparent">
+                        <Grid Width="38" Height="16" VerticalAlignment="Center">
+                            <Border x:Name="Track"
+                                    Background="#40143737"
+                                    BorderBrush="{StaticResource Lapd.LineDim}"
+                                    BorderThickness="1" />
+                            <Rectangle x:Name="Knob"
+                                       Width="12" Height="10"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       Margin="2,0,0,0"
+                                       Fill="#7350BEAF" />
+                            <Rectangle x:Name="FocusRing"
+                                       Margin="-4"
+                                       Stroke="{StaticResource Lapd.TealDim}"
+                                       StrokeThickness="1"
+                                       StrokeDashArray="2 2"
+                                       Visibility="Collapsed" />
+                        </Grid>
+                        <ContentPresenter x:Name="Label"
+                                          Margin="12,0,0,0"
+                                          VerticalAlignment="Center"
+                                          TextElement.Foreground="{TemplateBinding Foreground}">
+                            <ContentPresenter.Effect>
+                                <DropShadowEffect Color="#4D50C8B4" BlurRadius="4" ShadowDepth="0" />
+                            </ContentPresenter.Effect>
+                        </ContentPresenter>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Track" Property="BorderBrush" Value="{StaticResource Lapd.Line}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Knob" Property="Margin" Value="22,0,0,0" />
+                            <Setter TargetName="Knob" Property="Fill" Value="{StaticResource Lapd.Teal}" />
+                            <Setter TargetName="Knob" Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Color="{StaticResource Lapd.GlowColor}" BlurRadius="7" ShadowDepth="0" />
+                                </Setter.Value>
+                            </Setter>
+                            <Setter TargetName="Track" Property="BorderBrush" Value="{StaticResource Lapd.Line}" />
+                            <Setter TargetName="Track" Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Color="#FF5FE8D2" BlurRadius="8" ShadowDepth="0" Opacity="0.25" />
+                                </Setter.Value>
+                            </Setter>
+                            <Setter TargetName="Label" Property="TextElement.Foreground" Value="{StaticResource Lapd.Teal}" />
+                            <Setter TargetName="Label" Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Color="#805FE8D2" BlurRadius="6" ShadowDepth="0" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter TargetName="FocusRing" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

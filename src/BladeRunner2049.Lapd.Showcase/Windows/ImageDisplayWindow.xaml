@@ -1,0 +1,38 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.ImageDisplayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lapd="clr-namespace:BladeRunner2049.Lapd.Styles;assembly=BladeRunner2049.Lapd.Styles"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // IMAGE DISPLAY"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="IMAGE DISPLAY"
+                           SectionNumber="09"
+                           SectionTitle="IMAGE DISPLAY"
+                           JpLabel="走査">
+        <StackPanel>
+            <ContentControl Style="{StaticResource Lapd.Well}">
+                <Grid Width="120" Height="120">
+                    <Grid.Effect>
+                        <DropShadowEffect Color="#8C5FE8D2" BlurRadius="14" ShadowDepth="0" />
+                    </Grid.Effect>
+                    <Ellipse Width="88" Height="88" Stroke="{StaticResource Lapd.Teal}" StrokeThickness="1.2" Opacity="0.55" />
+                    <Ellipse Width="56" Height="56" Stroke="{StaticResource Lapd.Teal}" StrokeThickness="1.2" Opacity="0.8" />
+                    <Ellipse Width="6" Height="6" Fill="{StaticResource Lapd.TealBright}" />
+                    <Path Stroke="{StaticResource Lapd.Teal}" StrokeThickness="1.2"
+                          Data="M60,4 L60,26 M60,94 L60,116 M4,60 L26,60 M94,60 L116,60" />
+                    <Path Stroke="{StaticResource Lapd.Teal}" StrokeThickness="1.2" Opacity="0.5"
+                          Data="M22,22 L34,22 M22,22 L22,34 M98,22 L86,22 M98,22 L98,34 M22,98 L34,98 M22,98 L22,86 M98,98 L86,98 M98,98 L98,86" />
+                </Grid>
+            </ContentControl>
+            <DockPanel Margin="0,7,0,0" LastChildFill="False">
+                <TextBlock DockPanel.Dock="Left" Style="{StaticResource Lapd.StripJp}" VerticalAlignment="Center" Text="プロフィール" />
+                <Rectangle DockPanel.Dock="Left" Style="{StaticResource Lapd.StripBar}" VerticalAlignment="Center" />
+                <Rectangle DockPanel.Dock="Left" Style="{StaticResource Lapd.StripChip}" VerticalAlignment="Center" Margin="7,0,0,0" />
+                <TextBlock DockPanel.Dock="Right" Style="{StaticResource Lapd.StripTag}" VerticalAlignment="Center"
+                           lapd:Tracking.Spaces="2" lapd:Tracking.Text="SCAN 09 // 1:1" />
+            </DockPanel>
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

@@ -1,0 +1,19 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.RadioWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // RADIO BUTTON"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="RADIO BUTTON"
+                           SectionNumber="04"
+                           SectionTitle="RADIO BUTTON"
+                           JpLabel="系列">
+        <StackPanel HorizontalAlignment="Left">
+            <RadioButton Style="{StaticResource Lapd.Radio}" GroupName="series" Content="NEXUS-6" Margin="0,0,0,12" />
+            <RadioButton Style="{StaticResource Lapd.Radio}" GroupName="series" Content="NEXUS-8" IsChecked="True" Margin="0,0,0,12" />
+            <RadioButton Style="{StaticResource Lapd.Radio}" GroupName="series" Content="NEXUS-9" />
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

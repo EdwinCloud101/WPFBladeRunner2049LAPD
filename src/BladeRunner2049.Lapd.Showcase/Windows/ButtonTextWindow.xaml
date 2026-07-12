@@ -1,0 +1,18 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.ButtonTextWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // BUTTON / TEXT"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="BUTTON / TEXT"
+                           SectionNumber="11"
+                           SectionTitle="BUTTON / TEXT"
+                           JpLabel="送信">
+        <StackPanel Orientation="Horizontal">
+            <Button Style="{StaticResource Lapd.Button}" Content="TRANSMIT" Margin="5,5,22,5" />
+            <Button Style="{StaticResource Lapd.Button.Ghost}" Content="DISCARD" Margin="5" />
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

@@ -1,0 +1,16 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.TextAreaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // TEXTAREA"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="TEXTAREA"
+                           SectionNumber="01"
+                           SectionTitle="TEXTAREA"
+                           JpLabel="フィールドレポート">
+        <TextBox Style="{StaticResource Lapd.TextArea}"
+                 Text="CASE 6-10-21 // MORTON FARM&#10;SUBJECT EVADED INITIAL SCAN.&#10;BASELINE DEVIATION RECORDED." />
+    </controls:ConsoleShell>
+</Window>

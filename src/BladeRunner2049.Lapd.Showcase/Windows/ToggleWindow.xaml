@@ -1,0 +1,18 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.ToggleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // TOGGLE SWITCH"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="TOGGLE SWITCH"
+                           SectionNumber="13"
+                           SectionTitle="TOGGLE SWITCH"
+                           JpLabel="切替">
+        <StackPanel HorizontalAlignment="Left">
+            <CheckBox Style="{StaticResource Lapd.Toggle}" Content="VOIGHT-KAMPFF OVERLAY" IsChecked="True" Margin="0,0,0,12" />
+            <CheckBox Style="{StaticResource Lapd.Toggle}" Content="SECTOR ALERT FEED" />
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

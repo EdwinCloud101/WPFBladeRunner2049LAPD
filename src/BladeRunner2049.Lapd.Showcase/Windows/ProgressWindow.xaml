@@ -1,0 +1,39 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.ProgressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lapd="clr-namespace:BladeRunner2049.Lapd.Styles;assembly=BladeRunner2049.Lapd.Styles"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // PROGRESS BAR"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="PROGRESS BAR"
+                           SectionNumber="14"
+                           SectionTitle="PROGRESS BAR"
+                           JpLabel="進行">
+        <StackPanel>
+            <Grid Margin="0,0,0,22">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="52" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Style="{StaticResource Lapd.SliderName}" VerticalAlignment="Center"
+                           lapd:Tracking.Spaces="1" lapd:Tracking.Text="UPLINK" />
+                <ProgressBar Grid.Column="1" Style="{StaticResource Lapd.Progress}" Margin="14,0" Minimum="0" Maximum="100" Value="67" />
+                <TextBlock Grid.Column="2" Style="{StaticResource Lapd.SliderValue}" VerticalAlignment="Center" Text="067" />
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="52" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Style="{StaticResource Lapd.SliderName}" VerticalAlignment="Center"
+                           lapd:Tracking.Spaces="1" lapd:Tracking.Text="SEARCHING" />
+                <ProgressBar Grid.Column="1" Style="{StaticResource Lapd.Progress}" Margin="14,0" IsIndeterminate="True" />
+                <TextBlock Grid.Column="2" Style="{StaticResource Lapd.SliderValue}" VerticalAlignment="Center" Text="&#x2014;" />
+            </Grid>
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

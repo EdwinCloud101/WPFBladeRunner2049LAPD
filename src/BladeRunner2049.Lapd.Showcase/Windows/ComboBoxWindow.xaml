@@ -1,0 +1,26 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.ComboBoxWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // COMBOBOX"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="COMBOBOX"
+                           SectionNumber="05"
+                           SectionTitle="COMBOBOX"
+                           JpLabel="型式">
+        <ComboBox Style="{StaticResource Lapd.ComboBox}"
+                  HorizontalAlignment="Left"
+                  SelectedIndex="1">
+            <ComboBox.ItemsSource>
+                <x:Array Type="sys:String">
+                    <sys:String>NEXUS-6 // RETIRED</sys:String>
+                    <sys:String>NEXUS-8 // OPEN SERIES</sys:String>
+                    <sys:String>NEXUS-9 // COMPLIANT</sys:String>
+                </x:Array>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+    </controls:ConsoleShell>
+</Window>

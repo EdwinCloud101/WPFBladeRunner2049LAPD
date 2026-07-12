@@ -1,11 +1,11 @@
 <Application x:Class="BladeRunner2049.Lapd.Showcase.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MainWindow.xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/BladeRunner2049Lapd.xaml" />
+                <ResourceDictionary Source="Resources/ConsoleShell.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

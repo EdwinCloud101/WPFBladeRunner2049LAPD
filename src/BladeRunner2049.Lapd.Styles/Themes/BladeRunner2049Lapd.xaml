@@ -4,6 +4,24 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Core.xaml" />
         <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Button.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/TextBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/CheckBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/RadioButton.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Toggle.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/ComboBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/MultiSelect.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/AutoComplete.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/ColorPicker.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Slider.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Tabs.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/DataGrid.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Tree.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/ImageDisplay.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/ImageUpload.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Progress.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Spinner.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Badge.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/Tooltip.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

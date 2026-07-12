@@ -1,0 +1,78 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:lapd="clr-namespace:BladeRunner2049.Lapd.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Core.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Controls/ComboBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="Lapd.ToolTip" TargetType="ToolTip">
+        <Setter Property="FontFamily" Value="{StaticResource Lapd.FontMono}" />
+        <Setter Property="FontSize" Value="8" />
+        <Setter Property="Foreground" Value="{StaticResource Lapd.TealBright}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="HasDropShadow" Value="False" />
+        <Setter Property="Placement" Value="Top" />
+        <Setter Property="HorizontalOffset" Value="-10" />
+        <Setter Property="VerticalOffset" Value="-4" />
+        <Setter Property="ContentTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <TextBlock lapd:Tracking.Spaces="2"
+                               lapd:Tracking.Text="{Binding}" />
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToolTip">
+                    <StackPanel Margin="10">
+                        <Border Background="{StaticResource Lapd.PopupFill}"
+                                BorderBrush="{StaticResource Lapd.Line}"
+                                BorderThickness="1"
+                                Padding="10,6">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#FF5FE8D2" BlurRadius="14" ShadowDepth="0" Opacity="0.25" />
+                            </Border.Effect>
+                            <ContentPresenter>
+                                <ContentPresenter.Effect>
+                                    <DropShadowEffect Color="#B38CF5E1" BlurRadius="5" ShadowDepth="0" />
+                                </ContentPresenter.Effect>
+                            </ContentPresenter>
+                        </Border>
+                        <Path Data="M0,0 L8,0 L4,5 Z"
+                              Fill="{StaticResource Lapd.Line}"
+                              HorizontalAlignment="Center" />
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Lapd.TipLine" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource Lapd.FontMono}" />
+        <Setter Property="FontSize" Value="11" />
+        <Setter Property="LineHeight" Value="22" />
+        <Setter Property="Foreground" Value="{StaticResource Lapd.TealMid}" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="#4D5AD2C8" BlurRadius="5" ShadowDepth="0" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Lapd.TipTerm" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource Lapd.FontMono}" />
+        <Setter Property="FontSize" Value="11" />
+        <Setter Property="Foreground" Value="{StaticResource Lapd.Teal}" />
+        <Setter Property="Cursor" Value="Help" />
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="#735FE8D2" BlurRadius="6" ShadowDepth="0" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

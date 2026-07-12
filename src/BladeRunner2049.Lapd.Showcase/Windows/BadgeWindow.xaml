@@ -1,0 +1,20 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.BadgeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // STATUS BADGE"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="STATUS BADGE"
+                           SectionNumber="16"
+                           SectionTitle="STATUS BADGE"
+                           JpLabel="状態">
+        <StackPanel Orientation="Horizontal">
+            <ContentControl Style="{StaticResource Lapd.Badge.On}" Content="ONLINE" Margin="0,0,16,0" />
+            <ContentControl Style="{StaticResource Lapd.Badge}" Content="STANDBY" Margin="0,0,16,0" />
+            <ContentControl Style="{StaticResource Lapd.Badge}" Content="ARCHIVED" Margin="0,0,16,0" />
+            <ContentControl Style="{StaticResource Lapd.Badge.Alert}" Content="RESTRICTED" />
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

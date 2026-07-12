@@ -1,0 +1,79 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.ButtonIconWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // BUTTON / ICON"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <Window.Resources>
+        <Style x:Key="IconPath" TargetType="Path">
+            <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}" />
+            <Setter Property="StrokeThickness" Value="1.5" />
+            <Setter Property="StrokeEndLineCap" Value="Square" />
+            <Setter Property="StrokeStartLineCap" Value="Square" />
+        </Style>
+    </Window.Resources>
+    <controls:ConsoleShell MastheadTitle="BUTTON / ICON"
+                           SectionNumber="12"
+                           SectionTitle="BUTTON / ICON"
+                           JpLabel="操作">
+        <StackPanel Orientation="Horizontal">
+            <Button Style="{StaticResource Lapd.IconButton}" Margin="0,0,22,0">
+                <Button.ToolTip>
+                    <ToolTip Style="{StaticResource Lapd.ToolTip}" Content="SEARCH" />
+                </Button.ToolTip>
+                <Viewbox Width="17" Height="17">
+                    <Canvas Width="24" Height="24">
+                        <Path Style="{StaticResource IconPath}"
+                              Data="M3.5,10 A6.5,6.5 0 1 0 16.5,10 A6.5,6.5 0 1 0 3.5,10 M15,15 L21,21" />
+                    </Canvas>
+                </Viewbox>
+            </Button>
+            <Button Style="{StaticResource Lapd.IconButton}" Margin="0,0,22,0">
+                <Button.ToolTip>
+                    <ToolTip Style="{StaticResource Lapd.ToolTip}" Content="ACQUIRE" />
+                </Button.ToolTip>
+                <Viewbox Width="17" Height="17">
+                    <Canvas Width="24" Height="24">
+                        <Path Style="{StaticResource IconPath}"
+                              Data="M5,12 A7,7 0 1 0 19,12 A7,7 0 1 0 5,12 M12,1.5 L12,6 M12,18 L12,22.5 M1.5,12 L6,12 M18,12 L22.5,12" />
+                    </Canvas>
+                </Viewbox>
+            </Button>
+            <Button Style="{StaticResource Lapd.IconButton}" Margin="0,0,22,0">
+                <Button.ToolTip>
+                    <ToolTip Style="{StaticResource Lapd.ToolTip}" Content="ARCHIVE" />
+                </Button.ToolTip>
+                <Viewbox Width="17" Height="17">
+                    <Canvas Width="24" Height="24">
+                        <Path Style="{StaticResource IconPath}"
+                              Data="M3,4 L21,4 L21,9 L3,9 Z M5,9 L5,20 L19,20 L19,9 M10,13 L14,13" />
+                    </Canvas>
+                </Viewbox>
+            </Button>
+            <Button Style="{StaticResource Lapd.IconButton}" Margin="0,0,22,0">
+                <Button.ToolTip>
+                    <ToolTip Style="{StaticResource Lapd.ToolTip}" Content="TRANSMIT" />
+                </Button.ToolTip>
+                <Viewbox Width="17" Height="17">
+                    <Canvas Width="24" Height="24">
+                        <Path Style="{StaticResource IconPath}"
+                              Data="M3,12 L21,4 L16,20 L11.5,13.5 L3,12 Z" />
+                    </Canvas>
+                </Viewbox>
+            </Button>
+            <Button Style="{StaticResource Lapd.IconButton}">
+                <Button.ToolTip>
+                    <ToolTip Style="{StaticResource Lapd.ToolTip}" Content="PURGE" />
+                </Button.ToolTip>
+                <Viewbox Width="17" Height="17">
+                    <Canvas Width="24" Height="24">
+                        <Path Style="{StaticResource IconPath}"
+                              Data="M5,5 L19,19 M19,5 L5,19" />
+                    </Canvas>
+                </Viewbox>
+            </Button>
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

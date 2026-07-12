@@ -1,0 +1,47 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.TabsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lapd="clr-namespace:BladeRunner2049.Lapd.Styles;assembly=BladeRunner2049.Lapd.Styles"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // TAB CONTROL"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="TAB CONTROL"
+                           SectionNumber="06"
+                           SectionTitle="TAB CONTROL"
+                           JpLabel="翻訳">
+        <TabControl Style="{StaticResource Lapd.TabControl}" SelectedIndex="1">
+            <TabItem Style="{StaticResource Lapd.TabItem}" Header="HISTORY">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource Lapd.PaneText}"
+                               lapd:Tracking.Spaces="1"
+                               lapd:Tracking.Text="LOG 2049-06-10 // RETRIEVAL DISPATCHED." />
+                    <TextBlock Style="{StaticResource Lapd.PaneTextDim}"
+                               lapd:Tracking.Spaces="1"
+                               lapd:Tracking.Text="LOG 2049-06-08 // FILE OPENED BY LT. JOSHI." />
+                </StackPanel>
+            </TabItem>
+            <TabItem Style="{StaticResource Lapd.TabItem}" Header="TRANSLATE">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource Lapd.PaneText}"
+                               lapd:Tracking.Spaces="1"
+                               lapd:Tracking.Text="SOURCE STREAM LOCKED. OUTPUT: ENGLISH." />
+                    <TextBlock Style="{StaticResource Lapd.PaneTextDim}"
+                               lapd:Tracking.Spaces="1"
+                               lapd:Tracking.Text="CONFIDENCE 0.97 // 2 SEGMENTS PENDING." />
+                </StackPanel>
+            </TabItem>
+            <TabItem Style="{StaticResource Lapd.TabItem}" Header="DATA">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource Lapd.PaneText}"
+                               lapd:Tracking.Spaces="1"
+                               lapd:Tracking.Text="RECORDS ON FILE: 1187. RESTRICTED: 4." />
+                    <TextBlock Style="{StaticResource Lapd.PaneTextDim}"
+                               lapd:Tracking.Spaces="1"
+                               lapd:Tracking.Text="LAST SYNC // SECTOR 6 ARCHIVE NODE." />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </controls:ConsoleShell>
+</Window>

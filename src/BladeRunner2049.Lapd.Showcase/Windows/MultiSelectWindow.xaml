@@ -1,0 +1,26 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.MultiSelectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // COMBOBOX / MULTI-SELECT"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="MULTI-SELECT"
+                           SectionNumber="20"
+                           SectionTitle="COMBOBOX / MULTI-SELECT"
+                           JpLabel="複数選択">
+        <StackPanel HorizontalAlignment="Left" Width="340">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                <ContentControl Style="{StaticResource Lapd.Chip}" Content="PATROL" Margin="0,0,6,0" />
+                <ContentControl Style="{StaticResource Lapd.Chip}" Content="RETRIEVAL" />
+            </StackPanel>
+            <ListBox Style="{StaticResource Lapd.MultiSelectList}">
+                <ListBoxItem Content="PATROL" IsSelected="True" />
+                <ListBoxItem Content="RETRIEVAL" IsSelected="True" />
+                <ListBoxItem Content="FORENSICS" />
+                <ListBoxItem Content="ARCHIVE" />
+            </ListBox>
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

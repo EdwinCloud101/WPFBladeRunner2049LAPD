@@ -1,0 +1,28 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.TreeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // TREE VIEW"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="TREE VIEW"
+                           SectionNumber="18"
+                           SectionTitle="TREE VIEW"
+                           JpLabel="階層">
+        <TreeView Style="{StaticResource Lapd.Tree}" Width="420" HorizontalAlignment="Left">
+            <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="ARCHIVE // 2049" IsExpanded="True">
+                <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="CASE FILES" IsExpanded="True">
+                    <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="4847_PROFILE.DAT" IsSelected="True" />
+                    <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="2181_PROFILE.DAT" />
+                    <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="BASELINE_LOG.TXT" />
+                </TreeViewItem>
+                <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="EVIDENCE">
+                    <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="WOODEN_HORSE.SCN" />
+                    <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="SERIAL_NR.IMG" />
+                    <TreeViewItem Style="{StaticResource Lapd.TreeItem}" Header="6-10-21_ANOMALY.SEQ" />
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+    </controls:ConsoleShell>
+</Window>

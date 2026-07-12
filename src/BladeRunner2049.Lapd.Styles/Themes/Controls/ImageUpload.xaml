@@ -1,0 +1,87 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/BladeRunner2049.Lapd.Styles;component/Themes/Core.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="Lapd.Upload" TargetType="Button">
+        <Setter Property="Height" Value="150" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border Background="{StaticResource Lapd.FillWell}" />
+                        <Border Margin="1"
+                                BorderBrush="#1246C8B4"
+                                BorderThickness="7">
+                            <Border.Effect>
+                                <BlurEffect Radius="10" />
+                            </Border.Effect>
+                        </Border>
+                        <Rectangle x:Name="Dash"
+                                   Stroke="#616EDCC8"
+                                   StrokeThickness="1"
+                                   StrokeDashArray="4 3"
+                                   Fill="Transparent" />
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Rectangle x:Name="FocusRing"
+                                   Margin="-5"
+                                   Stroke="{StaticResource Lapd.TealDim}"
+                                   StrokeThickness="1"
+                                   StrokeDashArray="2 2"
+                                   Visibility="Collapsed" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Dash" Property="Stroke" Value="{StaticResource Lapd.Line}" />
+                            <Setter TargetName="Dash" Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Color="#FF5FE8D2" BlurRadius="18" ShadowDepth="0" Opacity="0.12" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter TargetName="FocusRing" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Lapd.UploadL1" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource Lapd.FontMono}" />
+        <Setter Property="FontSize" Value="10" />
+        <Setter Property="Foreground" Value="{StaticResource Lapd.TealMid}" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="0,10,0,0" />
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="#665AD2C8" BlurRadius="5" ShadowDepth="0" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Lapd.UploadL2" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource Lapd.FontMono}" />
+        <Setter Property="FontSize" Value="8" />
+        <Setter Property="Foreground" Value="{StaticResource Lapd.TealDim}" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="0,4,0,0" />
+    </Style>
+
+    <Style x:Key="Lapd.UploadIcon" TargetType="Path">
+        <Setter Property="Stroke" Value="{StaticResource Lapd.TealMid}" />
+        <Setter Property="StrokeThickness" Value="1.5" />
+        <Setter Property="Fill" Value="{x:Null}" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="#805FE8D2" BlurRadius="6" ShadowDepth="0" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

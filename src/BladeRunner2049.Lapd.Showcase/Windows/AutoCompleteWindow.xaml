@@ -1,0 +1,32 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.AutoCompleteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // AUTOCOMPLETE"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="AUTOCOMPLETE"
+                           SectionNumber="21"
+                           SectionTitle="AUTOCOMPLETE"
+                           JpLabel="補完">
+        <StackPanel HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                <ContentControl Style="{StaticResource Lapd.Chip}" Content="DECKARD, R. &#x2715;" Margin="0,0,6,0" />
+                <ContentControl Style="{StaticResource Lapd.Chip}" Content="JOSHI, LT. &#x2715;" />
+            </StackPanel>
+            <ComboBox Style="{StaticResource Lapd.AutoComplete}">
+                <ComboBox.ItemsSource>
+                    <x:Array Type="sys:String">
+                        <sys:String>DECKARD, R.</sys:String>
+                        <sys:String>JOSHI, LT.</sys:String>
+                        <sys:String>GAFF, E.</sys:String>
+                        <sys:String>KD6-3.7</sys:String>
+                        <sys:String>STELLINE, A.</sys:String>
+                    </x:Array>
+                </ComboBox.ItemsSource>
+            </ComboBox>
+        </StackPanel>
+    </controls:ConsoleShell>
+</Window>

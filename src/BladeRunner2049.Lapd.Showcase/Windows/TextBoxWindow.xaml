@@ -1,0 +1,16 @@
+<Window x:Class="BladeRunner2049.Lapd.Showcase.Windows.TextBoxWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:BladeRunner2049.Lapd.Showcase.Controls"
+        Title="LAPD OS 9.22 // TEXTBOX"
+        Width="1100" Height="760"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource Lapd.BgDeep}">
+    <controls:ConsoleShell MastheadTitle="TEXTBOX"
+                           SectionNumber="02"
+                           SectionTitle="TEXTBOX"
+                           JpLabel="プロフィール">
+        <TextBox Style="{StaticResource Lapd.TextBox}"
+                 Text="KD6-3.7" />
+    </controls:ConsoleShell>
+</Window>
