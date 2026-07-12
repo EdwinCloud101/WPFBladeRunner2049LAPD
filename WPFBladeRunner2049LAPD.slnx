@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BladeRunner2049.Lapd.Showcase/BladeRunner2049.Lapd.Showcase.csproj" />
+    <Project Path="src/BladeRunner2049.Lapd.Styles/BladeRunner2049.Lapd.Styles.csproj" />
+  </Folder>
+</Solution>
