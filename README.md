@@ -4,6 +4,22 @@ A .NET 10 WPF port of the [blade-runner-2049-lapd-style](https://github.com/Edwi
 
 ![Visual Studio designer](https://raw.githubusercontent.com/EdwinCloud101/WPFBladeRunner2049LAPD/master/docs/screenshots/visual-studio-designer.png)
 
+## Install
+
+Available on [NuGet](https://www.nuget.org/packages/BladeRunner2049.Lapd.Styles):
+
+```
+dotnet add package BladeRunner2049.Lapd.Styles
+```
+
+Or in the Package Manager Console:
+
+```
+Install-Package BladeRunner2049.Lapd.Styles
+```
+
+Targets net8.0-windows and net10.0-windows.
+
 ## Projects
 
 - `BladeRunner2049.Lapd.Styles` - style-only library: design tokens, atmosphere brushes and 21 control styles, all keyed `Lapd.*`. Fonts (Orbitron, Share Tech Mono) embedded.
