@@ -2,7 +2,7 @@
 
 A .NET 10 WPF port of the [blade-runner-2049-lapd-style](https://github.com/EdwinCloud101/blade-runner-2049-lapd-style) HTML/CSS kit. Same LAPD console aesthetic: phosphor teal glow, chromatic aberration, scanlines, film grain and edge halation.
 
-![Visual Studio designer](docs/screenshots/visual-studio-designer.png)
+![Visual Studio designer](https://raw.githubusercontent.com/EdwinCloud101/WPFBladeRunner2049LAPD/master/docs/screenshots/visual-studio-designer.png)
 
 ## Projects
 

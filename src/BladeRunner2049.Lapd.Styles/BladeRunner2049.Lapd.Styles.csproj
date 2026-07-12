@@ -1,15 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0-windows</TargetFramework>
+    <TargetFrameworks>net8.0-windows;net10.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageId>BladeRunner2049.Lapd.Styles</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>EdwinCloud101</Authors>
+    <Description>Blade Runner 2049 LAPD console styles for WPF. 21 styled controls with phosphor teal glow, chromatic aberration, scanlines and film grain. Fonts embedded, resource dictionaries keyed Lapd.*.</Description>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/EdwinCloud101/WPFBladeRunner2049LAPD</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/EdwinCloud101/WPFBladeRunner2049LAPD</PackageProjectUrl>
+    <PackageTags>wpf;theme;styles;xaml;blade-runner;sci-fi;retro;ui;dark-theme</PackageTags>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
     <Resource Include="Fonts\*.ttf" />
     <Resource Include="Assets\*.png" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
