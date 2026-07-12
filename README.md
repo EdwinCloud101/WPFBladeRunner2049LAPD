@@ -40,3 +40,7 @@ Merge the aggregator dictionary and pick styles by key:
 Typefaces: [Orbitron](https://fonts.google.com/specimen/Orbitron) and [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono) (OFL).
 
 Independent, non-commercial fan homage to the visual design of Blade Runner 2049. Not affiliated with any rights holder.
+
+## License
+
+Public domain ([Unlicense](LICENSE)). Do whatever you want with it, no attribution needed. The fonts keep their own OFL license.
